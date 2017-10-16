@@ -1,0 +1,9 @@
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Resources\bin\Release\TesteWTime.Resources.dll
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Resources\bin\Release\TesteWTime.Resources.pdb
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Resources\obj\Release\TesteWTime.Resources.csprojResolveAssemblyReference.cache
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Resources\obj\Release\TesteWTime.Resources.Resources.Errors.resources
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Resources\obj\Release\TesteWTime.Resources.Resources.Language.resources
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Resources\obj\Release\TesteWTime.Resources.csproj.GenerateResource.Cache
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Resources\obj\Release\TesteWTime.Resources.csproj.CoreCompileInputs.cache
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Resources\obj\Release\TesteWTime.Resources.dll
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Resources\obj\Release\TesteWTime.Resources.pdb

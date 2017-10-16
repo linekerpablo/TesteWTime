@@ -1,0 +1,17 @@
+﻿@using TesteWTime.Resources.Resources
+
+<div class="jumbotron">
+    <h1>Get /stats</h1>
+    <div>Hits: <span>{{stats.hits}}</span></div>
+    <div>Quantidade urls: <span>{{stats.urlCount}}</span></div>
+
+    <div ng-repeat="urlStats in stats.topUrls">
+        <div class="cursor-pointer backgroud-white" ng-click="show = !show">{{urlStats.UrlId}} - {{urlStats.Url}}</div>
+        <div ng-show="show">
+            <div>@Language.ID: <span>{{urlStats.UrlId}}</span></div>
+            <div>@Language.Hits: <span>{{urlStats.Hits}}</span></div>
+            <div>@Language.Url: <span>{{urlStats.Url}}</span></div>
+            <div>@Language.ShortUrl: <span>{{urlStats.ShorUrl}}</span></div>
+        </div>
+    </div>
+</div>

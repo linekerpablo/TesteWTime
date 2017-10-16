@@ -1,0 +1,13 @@
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Release\TesteWTime.Domain.dll.config
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Release\TesteWTime.Domain.dll
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Release\TesteWTime.Domain.pdb
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Release\EntityFramework.dll
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Release\EntityFramework.SqlServer.dll
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Release\TesteWTime.Resources.dll
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Release\TesteWTime.Resources.pdb
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Release\EntityFramework.xml
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Release\EntityFramework.SqlServer.xml
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\obj\Release\TesteWTime.Domain.csprojResolveAssemblyReference.cache
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\obj\Release\TesteWTime.Domain.csproj.CoreCompileInputs.cache
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\obj\Release\TesteWTime.Domain.dll
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\obj\Release\TesteWTime.Domain.pdb

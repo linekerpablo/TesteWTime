@@ -1,0 +1,13 @@
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\obj\Debug\TesteWTime.Domain.csproj.CoreCompileInputs.cache
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Debug\TesteWTime.Domain.dll
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Debug\TesteWTime.Domain.pdb
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\obj\Debug\TesteWTime.Domain.dll
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\obj\Debug\TesteWTime.Domain.pdb
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\obj\Debug\TesteWTime.Domain.csprojResolveAssemblyReference.cache
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Debug\TesteWTime.Domain.dll.config
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Debug\EntityFramework.dll
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Debug\EntityFramework.SqlServer.dll
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Debug\TesteWTime.Resources.dll
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Debug\TesteWTime.Resources.pdb
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Debug\EntityFramework.xml
+F:\VSO\TesteWTime\TesteWTime.MVC\TesteWTime.Domain\bin\Debug\EntityFramework.SqlServer.xml
