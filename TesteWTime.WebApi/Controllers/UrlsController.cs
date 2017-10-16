@@ -42,11 +42,9 @@ namespace TesteWTime.WebApi.Controllers
         [Route("GetAll")]
         public async Task<IEnumerable<Urls>> GetAll()
         {
-            IEnumerable<Urls> lstUrlss = _urlsRepository.GetAll();
-
             return await Task.Run(() =>
             {
-                return lstUrlss;
+                return _urlsRepository.GetAll();
             });
         }
 
@@ -63,7 +61,10 @@ namespace TesteWTime.WebApi.Controllers
                     return request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
                 }
 
-                Urls objUrls = _urlsRepository.GetByUrl(objUrlsModel.url);
+                Urls objUrls = await Task.Run(() =>
+                {
+                    return _urlsRepository.GetByUrl(objUrlsModel.url);
+                });
 
                 if (objUrls == null)
                 {
@@ -72,21 +73,24 @@ namespace TesteWTime.WebApi.Controllers
                     objUrls.Url = objUrlsModel.url;
                     objUrls.ShortUrl = $"{Utilities.ShortUrl}{Utilities.GenerateRandomUrl()}";
 
-                    _urlsRepository.Add(objUrls);
+                    await Task.Run(() =>
+                    {
+                        _urlsRepository.Add(objUrls);
+                    });
                 }
                 else
                 {
                     objUrls.Hits = objUrls.Hits + 1;
 
-                    _urlsRepository.Update(objUrls);
+                    await Task.Run(() =>
+                    {
+                        _urlsRepository.Update(objUrls);
+                    });
                 }
 
                 string jsonObject = Newtonsoft.Json.JsonConvert.SerializeObject(objUrls);
 
-                return await Task.Run(() =>
-                {
-                    return request.CreateResponse(HttpStatusCode.OK, jsonObject, Configuration.Formatters.JsonFormatter); ;
-                });
+                return request.CreateResponse(HttpStatusCode.OK, jsonObject, Configuration.Formatters.JsonFormatter);
             }
             catch (Exception ex)
             {
@@ -106,12 +110,12 @@ namespace TesteWTime.WebApi.Controllers
                     return request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
                 }
 
-                _urlsRepository.Remove(objUrls);
-
-                return await Task.Run(() =>
+                await Task.Run(() =>
                 {
-                    return request.CreateResponse(HttpStatusCode.OK);
+                    _urlsRepository.Remove(objUrls);
                 });
+
+                return request.CreateResponse(HttpStatusCode.OK);
             }
             catch (Exception ex)
             {
@@ -131,12 +135,12 @@ namespace TesteWTime.WebApi.Controllers
                     return request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
                 }
 
-                _urlsRepository.Update(objUrls);
-
-                return await Task.Run(() =>
+                await Task.Run(() =>
                 {
-                    return request.CreateResponse(HttpStatusCode.OK);
+                    _urlsRepository.Update(objUrls);
                 });
+
+                return request.CreateResponse(HttpStatusCode.OK);
             }
             catch (Exception ex)
             {

@@ -27,11 +27,9 @@ namespace TesteWTime.WebApi.Controllers
         [Route("user/{id}")]
         public async Task<Users> Get(Int64 id)
         {
-            Users objUsers = _usersRepository.GetById(id);
-
             return await Task.Run(() =>
             {
-                return objUsers;
+                return _usersRepository.GetById(id);
             });
         }
         [HttpGet]
@@ -60,12 +58,12 @@ namespace TesteWTime.WebApi.Controllers
 
                 Users objUsers = new Users { Name = objUsersModel.name };
 
-                _usersRepository.Add(objUsers);
-
-                return await Task.Run(() =>
+                await Task.Run(() =>
                 {
-                    return request.CreateResponse(HttpStatusCode.OK, objUsers, Configuration.Formatters.JsonFormatter);
+                    _usersRepository.Add(objUsers);
                 });
+
+                return request.CreateResponse(HttpStatusCode.OK, objUsers, Configuration.Formatters.JsonFormatter);
             }
             catch (Exception ex)
             {
@@ -80,12 +78,12 @@ namespace TesteWTime.WebApi.Controllers
 
             try
             {
-                _usersRepository.Remove(objUsers);
-
-                return await Task.Run(() =>
+                await Task.Run(() =>
                 {
-                    return request.CreateResponse(HttpStatusCode.OK);
+                    _usersRepository.Remove(objUsers);
                 });
+
+                return request.CreateResponse(HttpStatusCode.OK);
             }
             catch (Exception ex)
             {
@@ -105,12 +103,12 @@ namespace TesteWTime.WebApi.Controllers
                     return request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
                 }
 
-                _usersRepository.Update(objUsers);
-
-                return await Task.Run(() =>
+                await Task.Run(() =>
                 {
-                    return request.CreateResponse(HttpStatusCode.OK);
+                    _usersRepository.Update(objUsers);
                 });
+
+                return request.CreateResponse(HttpStatusCode.OK);
             }
             catch (Exception ex)
             {
