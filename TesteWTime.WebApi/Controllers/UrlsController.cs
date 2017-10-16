@@ -31,11 +31,9 @@ namespace TesteWTime.WebApi.Controllers
         [Route("stats/{id}")]
         public async Task<Urls> Get(Int64 id)
         {
-            Urls objUrls = _urlsRepository.GetById(id);
-
             return await Task.Run(() =>
             {
-                return objUrls;
+                return _urlsRepository.GetById(id);
             });
         }
         [HttpGet]
