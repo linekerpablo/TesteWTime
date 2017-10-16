@@ -36,11 +36,9 @@ namespace TesteWTime.WebApi.Controllers
         [Route("GetAll")]
         public async Task<IEnumerable<Users>> GetAll()
         {
-            IEnumerable<Users> lstUserss = _usersRepository.GetAll();
-
             return await Task.Run(() =>
             {
-                return lstUserss;
+                return _usersRepository.GetAll();
             });
         }
         [HttpPost]
